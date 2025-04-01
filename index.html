@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Choose Your Own Adventure</h1>
+        <div id="story"></div>
+        <div id="choices"></div>
+        <div id="image-container">
+            <img id="story-image" src="" alt="Story Image">
+        </div>
+        <button onclick="startGame()">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+	  <section id="addendum">
+        <h2>Project Addendum</h2>
+
+        <h3>Process Overview</h3>
+        <p>1. <strong>Planning and Storyboarding</strong>: I started by planning the story, mapping out the stages, and identifying potential choices that would lead to at least eight different endings. I created a flowchart to visualize the paths and endings, helping ensure the story was interactive and had meaningful choices.</p>
+        <p>2. <strong>HTML and CSS Structure</strong>: In the HTML, I created sections for displaying the story text, choices, and images. CSS was used to style these elements for a visually engaging layout. I wanted to make the UI clean and simple, so the user could focus on the story without distractions.</p>
+        <p>3. <strong>JavaScript Development</strong>: In JavaScript, I structured the story as an object with properties for <code>text</code>, <code>choices</code>, <code>consequence</code>, <code>image</code>, and <code>link</code> for each stage. Each choice triggered an update in the story's progression, creating a dynamic experience. Functions were built to start, update, and end the story, with <code>updatePage()</code> refreshing the content each time a choice was made.</p>
+
+        <h3>Creative Choices</h3>
+        <p>1. <strong>Story Concept</strong>: I chose a story about a cow and a tiger because it allowed for a wide range of scenarios — from light-hearted to suspenseful. Each choice aimed to create suspense or add humor, creating an immersive and engaging experience.</p>
+        <p>2. <strong>Visual Design</strong>: I wanted each ending to be visually distinct, so I sourced or created unique images to match each ending. I also added links to provide context or additional information for specific images, enhancing the interactive feel.</p>
+        <p>3. <strong>Choices and Consequences</strong>: To make the story more engaging, I crafted choices with varied consequences, leading to both positive and negative outcomes. This structure encouraged users to try different paths to see all possible endings, adding to the replay value.</p>
+
+        <h3>Challenges Faced and Solutions</h3>
+        <p>1. <strong>Image Paths on GitHub Pages</strong>: I initially faced issues with images not displaying correctly on GitHub Pages. I discovered that file paths were case-sensitive, and some images were incorrectly named. After correcting the names and confirming paths matched, the images displayed as expected.</p>
+        <p>2. <strong>Setting Image Links Dynamically</strong>: Adding clickable links to images in JavaScript required wrapping the image in an <code>&lt;a&gt;</code> tag and dynamically setting both the <code>src</code> for the image and <code>href</code> for the link. This added an extra layer of interactivity and solved the challenge of presenting additional content with each image.</p>
+         skills to build an engaging project with a playful narrative. Going through the process of building, testing, and refining each element also helped me develop a stronger understanding of JavaScript's capabilities in creating interactive user experiences.</p>
+    </section>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+         document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
+</body>
+</html>
